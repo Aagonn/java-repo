@@ -1,0 +1,114 @@
+    OPERATÖRLER:
+
+
+ ATAMA OPERATÖRLERİ:
+
+ atama aoperatörleri bir değişkenin başka bir değişkene akratmak veya bir değişkene bir değer atamak için konur
+
+bu atama işlemi yapılırken aynı zamanda aritmetik operatörlerde kullanılabilir
+
+a) = : en temel atama operatörüdür atamalar her zaman sağdan sola doğru yapılır.
+b) += : soldaki değere kendi değeri ile beraber sağdaki değeride ekleyerek tekrar soldaki değere aktarır. ( int a=7; a+=8;) cevap 15 çıkar.
+
+
+
+İLİŞKİSEL OPERATÖRLER: 
+veriler arasında karşılaştırma yapmaya yarar ( <,>,>=,<=,==,!=(eşit değildir))
+
+
+    boolean mantıksal sonuçlar için kullanılr.
+
+
+ARİTMETİK OPERATÖRLER:
+ +;-;*;/;%(mod işlemi sadece kalanı gösterir);("++;--"(değeri arttır azalt butonları)) 
+ 
+
+MANTIKSAL OPERATÖRLER:
+                          &&:ve
+
+                         ||: veya
+
+                         !: değil
+
+                         !&: ve değil
+
+                         !| : veya değil.
+
+
+                         true||true= false 
+
+                         true||false=true 
+
+                         true&&false=false
+
+
+KONTROL YAPILARI VE DÖNGÜLER
+
+İF-ELSE YAPISI : 
+
+if(koşul)
+{
+  // işlemlerimiz
+}
+else
+{
+  // işlemler
+} 
+
+şeklinde yapılır.
+
+
+İÇ İÇE İF YAPILARI:
+
+		int hiz=110;
+		if(hiz>90)
+		
+		{
+			System.out.println("radara girdiniz");
+			if(hiz>90&&hiz<120)
+			{
+		System.out.println("cezanız 200 tl");
+		
+		}
+	      else if (hiz>=120)
+	{
+		System.out.println("cezanız 400 tl");
+		}
+		else
+		{ 
+		System.out.println("hızınız normal");
+		}
+	
+	}
+		
+
+
+şeklindedir.
+
+SWİCTH YAPISI: 
+
+switch kontorlü if else yapısının bir alternatifi olarak oluşturulmuştur.
+uzun uzun else if şartları koymak yerine bunu tek bir swith kontorolü ile yapabiliriz
+switch konrtolleri belli bir aralık değilde doğrudan değer kontorolü yapar o yüzden her if else yapısının switch yapılarda
+kullanamayız
+mesela günlerden p tesi ise şunları yap salıysa bunu yap diyebiliriz.
+
+
+
+switch(i)
+		{
+		case a: // eğer i değeri a ya eşitse bu blok işlenir
+			break;
+		case b : // eğer i değeri b ye eşitse bu blok işlenir
+			break;
+			default: // eğer i değeri hiçnirine eşit değilse bu block kullanılır
+				break;
+		
+                       }
+
+
+
+
+
+
+

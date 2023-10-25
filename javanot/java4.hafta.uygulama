@@ -1,0 +1,110 @@
+METODLAR
+
+Parametreli metodlar:
+
+ekranaYaz();
+hesapla();
+
+	}
+static void hesapla () {
+	int carp=5*8;
+	System.out.println(carp);
+}
+static void ekranaYaz() {
+
+System.out.println("metod çalıştı");
+}
+}
+
+
+parametreli metodlar:
+		
+int sonuc=hesapla(9,5);
+System.out.println("sonuc : "+sonuc);
+
+}
+	
+static int hesapla (int a , int b) {
+	return a*b;
+	
+}
+}
+		alttaki kod için en üstte (static int x , y ;) yazılıcak.
+	
+int a =12, b= 5;
+islem(a,b);
+ekranaYaz();
+	}
+static void islem(int a ,int b) {
+x=a;
+y=b;
+}
+static void ekranaYaz() {
+System.out.println("x değeri = "+ x);
+ System.out.println("y değeri = "+ y);
+ }
+}
+
+ soru:  
+klavyeden okutulan n sayı değerine kadar olan toplamın static metod ve recursion metoduyla kodlayın.
+
+		Scanner sc =new Scanner (System.in);
+		System.out.println("lütfen bir sayı giriniz");
+	    int sayi = sc.nextInt();
+		double sonuc = hesapla(sayi);
+		System.out.println("sonuc=" + sonuc);
+		System.out.println("sonuc="+ sonuc);
+	}
+	static int hesapla ( int x)
+	{ 
+		int toplam=0;
+				for ( int i=0; i<=x; i++) 
+				{
+	toplam+=i;
+				}
+return toplam;
+	}
+}
+
+		Scanner sc =new Scanner (System.in);
+		System.out.println("lütfen bir sayı giriniz");
+	    int sayi = sc.nextInt();
+		double sonuc = hesapla(sayi);
+		System.out.println("sonuc=" + sonuc);
+		System.out.println("sonuc="+ sonuc);
+	}
+	static int hesapla ( int x)
+	{ 
+
+if (x==1) 
+{
+	return 1;
+	
+}
+else 
+{
+	return x+hesapla(x-1);
+
+
+Soru:
+klavyeden okutulan n sayı değerine kadar faktöriyel hesabını static metod ve recursion metodu ile yazın.
+		
+
+		Scanner sc =new Scanner (System.in);
+		System.out.println("lütfen bir sayı giriniz");
+	    int fak = sc.nextInt();
+		int sonuc = hesapla(fak);
+		System.out.println("sonuc=" + sonuc);
+		
+	}
+	static int hesapla ( int x)
+	{ 
+		int faktoriyel=1;
+				for ( int i=1; i<=x; i++) 
+				{
+	faktoriyel = faktoriyel*i;
+				}
+return faktoriyel;
+	}
+}
+	}}

@@ -1,0 +1,63 @@
+DÖNGÜLER
+
+ DO WİLE:
+
+bu döngünün wile döngüsünden tek farkı döngüye girildikten sonra koşula bakıldığı için koşul yanlış olsa bile
+döngü en bir kere çalışır.
+
+
+
+DO
+{ 
+//işler
+}while(koşul);
+
+
+
+ FOR DÖNGÜSÜ:
+
+bu döngü türünde bir aralık belirtilir ve bu aralık boyunca döngü çalışır.
+
+for(başlangıç değeri;koşul;artım miktarı)
+{
+//işlemlerimiz
+}
+
+
+SORU: KLAVYEDEN GİRİLEN N SAYISI İÇİN SAYILARIN TOPLAMINI VEREN PROGRAMI YAZINIZ
+
+
+
+soru; 1den 50 ye kadar olan sayılar içerisinde 7 ye tam bölünen sayıları ekrana yazdıran kodları yazınız.
+
+
+
+MATEMATİKSEL SINIFLAR
+
+
+
+MATEMATİKSEL SINIFLAR:
+
+system.out.println(math.ceil(30.1));--> tavan rakamı gösterir yani 4
+
+system.out.println(math.floor(30.75));--> taban sayıyı verir yani 3
+
+system.out.println(math.round(30.50));--> yuvarlicak 50 ve üstü diğer sayı yani 4; 0.49 olursa 3 olur
+
+system.out.println(math.cos(30.1));--> cosinüs değerini verir
+
+system.out.println(math.sqrt(25.00));--> karekökünü verir yani 5.0
+
+system.out.println(math.abs(-30.1));--> mutlak değer verir yani 30.1
+
+system.out.println(math.pow(2.10));--> üzerili yazdırı buda 2 üzeri 10 olur
+
+system.out.println(math.min(30.1. 28.0));--> ikisi arasında kıyas yapıp minimum değeri olanı gösterir yani 28.0
+
+
+system.out.println(math.random());-->rast gele bir sayı gösterir
+
+
+
+ödev:
+klavyeden girilicek sayının asal olup olmadığını veren programın waile döngüsü kullanarakyazınız.

@@ -1,0 +1,56 @@
+*  değişken tanımlama kuralları, özel-anahtar-kelime-ver tipi-değişken adı 'şeklinde sıralanır.
+
+*her değişken bir tipe sahip olmalıdır   x=5 olmaz , byte x =5 byte bir değişkendir
+
+ *değişkenler; değer atamadan kullanılamazlar,  int=a; olmaz
+
+*aynı tip değişkenler aynı satırda tanımlanabilir.  int a=15 , b =22 , c=18 ; şeklinde yazılabilir
+
+*değişken isimlerinde türkçe karakter kullanılmamalı    ö,i,ü,ğ,ç,ş,ı
+
+*değişken isimleri sayı ile başlamaz ve değişken isminde boşluk olmamalıdır.
+  int 3x=8;(olmaz) string (adı soyadı) arada boşluk olmaz
+
+NOT: java casesensitive bir dildir yani büyük küçük harf ayrımı vardır. A harfi ile a değişkenleri farklıdır
+ int ogrNO ile OgrNO farklı atamalar gerektirir bilgisatar farklı algılıyor
+
+
+primitif tipler:
+ 
+ byte: 
+8 bittir. 1 byte'dır. tam sayı türünde -128 ile 127 arasında değerler alır.
+küçük değerli sayılar için int yerimne kullanılır.
+
+short: 
+16 bittir. 2 bytr'dir tamsayı türünde -32768 ile 32767 arasında değer alır
+        short sayı=15873;(örnek)
+
+int:
+32 bittir 4 byte'dır tam sayı türünde -2^31 ile 2^31-1 arasında değer alır
+
+long:
+ 64 bittir tam sayı türünde -2^63 ile 2^63-1 arasında değer alır
+
+float:
+ uzunluğu 32 bittir ondalık sayı türünde -3.4*10^38 ile 3.4*10^38 arasında olur.
+
+        float a= -5.5; flod b= a/100  0.05
+
+double:
+ 64 bittir. ondalık sayı türünde -1.7*10^308 ile 1.7*10^308 arasındadır
+
+
+char: 
+16 bittir karakter türünde değerler alır. içerisinde yanlızca bir harf, rakam ve ya işaret girilebilir. girilen bu değerler çift tırnak değil tek tırnak arasına yazılmalıdır. 
+        char harf='A'; char değer='5';
+
+boolean: 
+yanlızca 2 değer alır. ( true veya folse) bellekte 1 bit yer kaplar. varsayılan değeri false'dır.  boolean x ;
+int a=5;
+int b=6;
+boolean x= (a==b)
+
+
+STRİNG VERİ TİPİ:
+string,referans tipindedir.string tipi için char'ların birleşmesinden oluşmuştur diyebiliriz. char'dan farklı olarak(" ") çift tırnak içerisinde tanımlanır.
+        string ad = "özgür", soyad= "karakuş";

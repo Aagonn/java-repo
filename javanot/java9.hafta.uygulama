@@ -1,0 +1,119 @@
+NESNE YÖNELİK PROGRAMLAMA
+
+soru
+
+
+
+int carpma (int sayi1,int sayi2)
+		{
+			return sayi1*sayi2;
+		}
+		int toplama(int sayi1,int sayi2) 
+		
+		{
+			return sayi1+sayi2;
+		}
+		int cikartma (int sayi1 , int sayi2) {
+			
+			return sayi1-sayi2;
+		}
+		int bolme (int sayi1, int sayi2) {
+			
+			return sayi1/sayi2;
+		}
+		public static void main (String [] args) {
+		
+			Scanner input=new Scanner(System.in);
+		System.out.println("lütfen ilk sayınızı giriniz");
+		int a=input.nextInt();
+		System.out.println("lütfen ikinci sayınızı giriniz");
+		int b=input.nextInt();
+		
+			javaders islem1=new javaders();
+//			javaders islem2=new javaders();
+//	        javaders islem3=new javaders();
+//	        javaders islem4=new javaders();
+	
+	int sonuc1=islem1.carpma(a,b);
+    int sonuc2=islem1.toplama(a,b);
+	int sonuc3=islem1.cikartma(a,b);
+	double sonuc4=islem1.bolme(a,b);
+	
+	
+	
+	
+	System.out.println("çarpma sonucu : " + sonuc1);
+	System.out.println ("toplama sonucu :" + sonuc2);
+	System.out.println("çıkartma sonucu : " + sonuc3);
+    System.out.println("bölme sonuc : " + sonuc4);
+
+package javaders;
+
+public class types {
+int x;
+	public static void main(String[] args) {
+
+
+/*
+		int x =15;
+System.out.println("deger1" + x);
+degistir(x);
+System.out.println("deger2 " + x);
+	
+	}
+
+	static void degistir (int x ) {
+		x+=5;
+		System.out.println("deger3" + x);
+	}
+	
+		
+		
+		
+		
+	
+	types t1 =new types();
+	t1.x=15;
+	System.out.println("deger1 : " + t1.x);
+	t1.degistir(t1);
+	System.out.println("deger2 : " + t1.x);
+}
+	
+	void degistir (types t1) {
+		t1.x+=5;
+		System.out.println("deger3 : " + t1.x);
+	
+*/
+
+
+int array [] = {5,9,13,-89,45};
+System.out.println("deger1: " + array[2]);
+degistir(array);
+System.out.println("deger2. " +array[2]) ;
+	}
+	static void degistir(int array[]) {
+		array[2]+=5;
+		System.out.println("deger3 : " + array[2]);
+
+
+package javaders;
+
+public class Degiskenler {
+static int deg=45;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Degiskenler d1=new Degiskenler();
+		Degiskenler d2=new Degiskenler();
+		System.out.println(d1.deg);
+		System.out.println(d2.deg);
+		
+		d1.deg=15;
+		d2.deg=20;
+		d2.deg=10;
+		System.out.println(d1.deg);
+		System.out.println(d1.deg);
+		System.out.println(Degiskenler.deg);
+	}
+
+}

@@ -1,0 +1,100 @@
+PARAMETRESİZ METODLAR
+
+erişim belirleyici:
+metoda nasıl erişileceğini belirtir yazmak zorunda değildir
+
+dönüş tipi: 
+metoddan dönecek değerin tipidir .int , string, object, gibi tipler olabilir. metod eğer geriye bir değer dçndürmüyorsa void olarak tamamlanmalıdır eğer döndürüyor ise dönüş tipi mutlaka yapılmalıdır
+
+metod adı:  
+metoda verilecek isimdir
+
+parametre listesi: 
+bir metoda kullanması için göndereceğimiz değerlerdir. bu değerlerin sırası ve tipi önemlidir.gönderilecek bu değerlerin tipide belirtilmelidir.
+
+metod gövdesi: 
+buraya metodun yapacağı işler yazılır
+
+
+
+
+parametresiz metodlar: 
+parametre almayan metodlar herhangi bir parametre değeri almadanbir kod bloğunu işleyen metodlardır bu metodlar herhangi bir metni ekrana yazabilir
+bir değer döndürebilir ve bunun gibi bir çok işlem yapabilir.
+
+
+
+String isim = yaz();
+		
+		System.out.println(isim);
+		
+	}
+	 static String yaz ()
+	 
+	 { return "özgür";
+	 }
+	 }
+
+PARAMETRE almadanda geriye değer alınabilir.
+
+
+eğer geriye değer dönecekse dönüş tipi metodun başına yazılır.
+biz burada void yerine string yazdık
+çünkü geriye dönen değer string tipindedir daha sonra dönen değeri isim değişkenine attık ve bunu ekrana yazdık
+
+PARAMETRELİ METODLAR
+
+
+parametreli medotlar: 
+bir metoda kullanılması için değerler gönderdiğimizde bu metod parametreli metod olur aldığı parametreler ile işlem yapar
+parametre alan metodlarda parantez içerisine önce tipi sonta adı yazılır birden fazla parametre kullanılacaksa aralara virgül konur.
+
+
+	 hesapla(5,7);
+		}
+		static void hesapla(int a, int b)
+		{
+		System.out.println(a*b);
+}}
+
+
+
+
+bu örnekte para metre alan bir metod kullandık main metodumuz içerisinde metodu çağırdık ve parametre olarak 5 ve 7 sayılarını gönderdik yani metoda 
+bu sayıların al ve işlem yap dedik istediğimiz kadar parametre gönderebilirdik 
+
+
+
+
+
+parametre gönderirken değerlerin tipini belirtmek zorunda değiliz fakat metodda bu dğeri alırken paraömetrelerin tipiini  elirtmek zorundayız.
+bu örnektede olduğu gibi alınan parametreler int tipindedir aldığımız değerleri çarparak ekranda gösterir.
+bir metod parametre alabilir fakat geriye bir değer döndürme zonluluğu yoktur.
+
+
+
+public class özgür {
+static int x,y;
+	public static void main(String[] args) {
+
+
+
+	
+		int a=5, b=2;
+		islem(a,b);
+		yaz();
+	}
+	static void islem(int a, int b)
+	{ 
+		 x=a;
+         y=b;
+	
+	}
+	static void yaz()
+	{
+		System.out.println("x değeri :" + x);
+		System.out.println("y değeri :" + y);
+	}
+		
+
+}

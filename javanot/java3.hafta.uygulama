@@ -1,0 +1,125 @@
+DÖNGÜLER
+
+int i= 10 , j=0, k=0;
+		while (i>j)
+		{
+			System.out.println("i,j'den büyük");
+			i=2;
+			j+=2;
+			k++;
+			
+		}
+		System.out.println("artık büyük değil");
+		System.out.println("bu döngü " +k + " kare döngü");
+		
+		
+		{
+		int sayi=1;	
+                	do 
+
+		{
+			System.out.println("sayı değişimi"+ sayi);	
+		}while(sayi<0);
+	}
+
+
+
+
+
+int x=100, y=40, i=0;
+	do {
+		i++;
+		x=x-10;
+		y=y+10;
+	}
+	while (x>y);
+	
+	System.out.println("döngü " +i+ " kere döngü");
+ForegroundAction DÖNGÜ ÖRNEĞİR
+		for(int i=1;i<=10;i+=2)
+		{ System.out.println("i değeri  " +i);
+	}
+		{
+			for(int i=1; i<=50; i++)
+			{
+		if(i%7==0)
+		{
+		System.out.println(i+" sayı 7'ye bölünür");
+		
+	}
+}
+
+
+MATEMATİKSEL SINIFLAR
+
+double x = Math.random();
+	System.out.println(x);
+	}
+	}
+
+
+
+
+ödev cevabı:
+		
+		        
+		        Scanner sc = new Scanner(System.in);
+		        
+		        System.out.print("Lütfen bir sayi giriniz: ");
+		        int sayi = sc.nextInt();
+		        int sayac = 0;
+		        int i = 2;
+	        
+		        while(i < sayi) {
+		            if(sayi % i == 0) {
+                      	                sayac++;
+		            }
+		            i++;
+		        }
+		        if(sayac == 0) {
+		            System.out.println(sayi + " Asal bir sayidir.");
+		        }
+		        else {
+		            System.out.println(sayi + " Asal bir sayi degildir.");
+		        }
+		
+		    }
+		}
+
+
+
+
+
+
+int bBasamagi, oBasamagi , yBasamagi, sayi;
+		for( int i=100; i<=999; i++)
+		{
+			sayi=i;
+		yBasamagi=sayi/100;
+	toplam==i) {
+		System.out.println("sayımız "+sayi);
+			}
+		else {
+			System.out.println("sayımız yoktur");
+		}
+		
+		}
+		
+
+
+
+
+
+
+
+
+		int  bBasamagi, oBasamagi , yBasamagi;
+		for (int sayi=100; sayi<=999; sayi++) {
+	  yBasamagi=sayi/100;
+	  oBasamagi=(sayi-(sayi/100)*100)/10;
+	  bBasamagi=sayi%10;
+		double toplam=Math.pow(bBasamagi, 3)+ Math.pow(oBasamagi, 3) + Math.pow(yBasamagi, 3);
+		if (toplam==sayi){
+			System.out.println("toplam=" + sayi);
+		}
+		}

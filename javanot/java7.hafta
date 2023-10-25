@@ -1,0 +1,113 @@
+DİZİLERİ KARŞILAŞTIRMA
+
+Herhangi bir yerde iki dizi karşılaştırmak için karşılaştıracağımız iki dizinin aynı tip olması gerekir 
+Dizileri karşılaştırmak için arrays sınıfının equals() metodunun kullanabiliriz 
+
+
+char [] dizi= { 'r'};
+char [] dizi2 = {'y'};
+System.out.println(Arrays.equals(dizi, dizi2));
+}}
+
+
+int [] dizi = {75 , 18};
+int [] dizi2 = {78, 18};
+System.out.println(Arrays.equals(dizi, dizi2));
+}}
+
+
+
+ÇOK BOYUTLU DİZİLER
+
+Çok boyutlu dizilerde satırlar dizinin bir indisini  süturnlar ise dizinin diğer indisini oluşturur 
+int dizi[] []  = new integer ; int [3] [3]; 
+Bu iki boyutlu 3 satırlı 3 süturnlu bir dizidir
+
+
+Elemanların ataması
+İnt matris [] [] = new int [] [] {{ 5,8},{2,-8}};
+Şeklinde yapılır.
+
+int matris [] [] = new int [] [] {{ 5,8},{2,-8}};
+System.out.println(matris[1][1]);
+}}
+Burda matris için 0dan başlıyor satır ve stünlar
+
+
+int dizi [] = new int [1];
+String dizi2 [] = new String[1];
+boolean dizi3[] = new boolean[1];
+
+System.out.println(dizi [0]);
+System.out.println(dizi2 [0]);
+System.out.println(dizi3 [0]);
+
+
+Matris oluşturma;
+
+int dizi [] [] = new int [3] [4];
+for ( int i=0; i<3; i++)
+{
+	for(int j=0; j<3; j++)
+	{
+		dizi[i] [j] =i+j;
+		System.out.print(dizi[i] [j] + "\t");
+	}
+	System.out.println("");
+}
+	}
+
+}
+
+
+Soru: 1  2   3    4 
+      5  6   7   8 
+      9 10 11 12
+Matrisini oluşturun:
+
+int dizi [] [] = new int [3] [4];
+		for ( int i=0; i<3; i++)
+		{
+			for(int j=0; j<4; j++)
+			{
+				dizi[i] [j] =i*4+j+1;
+				System.out.print(dizi[i] [j] +  "\t");
+			}
+			System.out.println("");
+		}
+			}
+
+		}
+Soru: birim matris oluşturun:
+
+
+
+
+
+
+
+
+
+Soru matrisin transpozunu veren kod: 123
+                                     456
+
+
+
+int dizi [] [] = {{1,2,3},{4,5,6}};
+	int matris[][]=new int[3][2];
+
+	for ( int i=0; i<2; i++)
+	{
+		for(int j=0; j<matris.length; j++)
+		{
+			matris [j][i] =dizi [i][j];
+			}
+	}
+	for (int i=0; i<3 ; i++)
+	{
+		for (int j=0; j<2; j++)
+		{
+			System.out.print(matris[i] [j] +  "\t");
+		}
+		System.out.println("");
+	}

@@ -1,0 +1,100 @@
+overloading örnek sorusu:	
+			
+	System.out.println(metod1(5));
+	/System.out.println(metod1(3,5));
+		}
+	static int metod1 (int sayi)
+	{ 
+		return sayi;
+	}
+	static int metod1 ( int sayi1 , int sayi2 )
+	{
+		return sayi1;
+	}
+	}
+			
+			
+	System.out.println(metod (5, 3.6));
+	System.out.println(metod ( 6.8, 5));
+		}
+		static int metod (int sayi1, double syai2)
+		{
+			return sayi1;
+			
+		}
+			static int metod  ( double sayi1 , int sayi2)
+			{
+				return sayi2;
+				
+			}
+	}
+			
+			
+	
+			System.out.println(metod (8));
+			System.out.println(metod ());
+		}
+		static int metod (int x)
+		{ return 6;
+		}
+		static int metod()
+		{ return 5;
+	
+	}
+	}
+	
+Soru:
+klavyeden okutulan n sayı değerine kadar faktöriyel hesabını static metod ve recursion metodu ile yazın.
+		
+		
+static cevap:
+		
+		Scanner sc =new Scanner (System.in);
+		System.out.println("lütfen bir sayı giriniz");
+	    int fak = sc.nextInt();
+		int sonuc = hesapla(fak);
+		System.out.println("sonuc=" + sonuc);
+		
+	}
+	static int hesapla ( int x)
+	{ 
+		int faktoriyel=1;
+				for ( int i=1; i<=x; i++) 
+				{
+	faktoriyel = faktoriyel*i;
+				}
+return faktoriyel;
+	}
+}
+	
+recursion cevap:
+	
+	
+	
+		Scanner sc =new Scanner (System.in);
+		System.out.println("lütfen bir sayı giriniz");
+	    int sayi = sc.nextInt();
+	    int sonuc = hesapla(sayi);
+		System.out.println("sonuc=" + sonuc);
+		
+	}
+	static int hesapla (int x)
+	{ 
+
+if (x==0) 
+
+{
+	return 1;
+	
+	}
+else 
+{
+	return (x*hesapla(x-1));
+	}
+
+
+
+
+
+
+

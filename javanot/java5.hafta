@@ -1,0 +1,21 @@
+METODLARDA RECURSİON VE OVERLOADİNG
+
+			METODLARDA RECURSİON ( ÖZYİNELEME)
+
+recursion bir metodun belli bir şart sağlanana kadar kendini sürekli olarak çağırmasıdır bu metotlar döngülerin yerine kullanılabilir
+
+program çalıştığında ilk olarak main metodu çalışırve bu main metodu da bir sınıf içerisinde bulunur program ilk çalıştığında herhangi bir nesne oluşturulmaz.
+nesne yokken main metoduna erişebilmek için static olarak tanımlanması gerekir ki doğrudan sınıf adını kullanarak main metodu çalışabilirsin.
+bu yüzden main  metodu her static olmalıdır. main metodumuzun public olarak tanımlanmasının sebebi ise kodu çalıştıran jvm nın bu metoda dışarıdan erişebilme gerekliliğidir.
+buraya kadar oluşturduğumuz static metod ve değişkenleri static olarak tanımlamamızın sebebi başka yerde oluşturulmasın diye değil main metodumuzudan bu metodlara erişebilmek için 
+o metodun da static olması gerekiyordu çünkü biliyoruz ki main metodumuz her şartta static olmalıdır programları başlama noktasıda bu main metodusur
+bu main metodundan başka metodlara erişmek gerekiyor sadece erişebilmek için metodları static tanımladık static olan bu main metoduna static olmayan bir metoda veya değişkene erişilemez.
+
+
+
+
+			METODLARIN AŞIRI YÜKLEMESİ(overloading) :
+
+herbir metod farklı görevler üstlenir ve üstlendiği göreve göre metodları isimlendiririz fakat farklı işlevler yapan ama aynı isme sahip olan metodlar
+oluşturmak istediğimzde karşımıza overloading çıkıyor örneğin int tipinde iki sayıyı çarpan bir hesaplama metodu yapalım fakat double tipindede 
+çarpma yapan bir hesaplama metodu oluşturmak istediğinzde overloading kavramı ortaya çıkıyor. 

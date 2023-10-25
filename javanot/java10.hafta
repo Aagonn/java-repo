@@ -1,0 +1,221 @@
+
+
+package javaders;
+
+public class ders {
+int value1,value2 ;
+	public ders() {
+		value1=10;
+	}
+public ders (int number) {
+	value2=number;
+}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ders object1=new ders();
+ders object2=new ders(50);
+System.out.println(object1.value1);
+System.out.println(object2.value2);
+	}
+
+}
+
+
+
+1-Constructors ların adı sınıf adı ile aynı olmalıdır
+2-Constructors metodlar geriye herhangi bir değer döndürmezler
+3- Constructors metodlar aşırı yüklenebilirler.
+4-her sınıfa ait bir default Constructors ı vardır ve bu default Constructors parametre almaz.
+
+
+
+ÖRNEK:
+
+package javaders;
+
+public class ders {
+void metod1(){
+	System.out.println("non-parameter");
+}
+void metod2(int number1) {
+	System.out.println("number 1 " + number1);
+}
+	public ders() {
+		metod1();
+	}
+public ders (int number2) {
+	metod2(number2);
+}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ders object1=new ders();// nesne oluşturulduğunda direkt olarak constarcter çağıtılır.
+ders object2=new ders(30);
+
+	}
+
+}
+
+
+
+
+ÖRNEK:
+
+
+package javaders;
+
+public class ders {
+static int number =0;
+public ders () {
+	System.out.println("çağrıldı : " + number);
+	number++;
+}
+
+
+	public static void loop(ders object1[]) {
+		for (int i =0; i<5;i++) {
+			
+			object1[i]=new ders();
+		}
+	
+	}
+public static void main (String[] args) {
+	ders object1[]=new ders [5];
+	ders.loop(object1);
+	System.out.println(number);
+}
+}
+
+
+
+
+özetle constructors oluşturulduğunda ilk yapmamızı istediğimiz şeyleri yapan bir metod.
+çümkü nesne oluşturulduğunda ilk anda çalışır.
+
+
+public class ders {
+/*Erişim belirleyici
+ * i.public : tanımlanan değişken veya metoda herkes ulaşabilir.
+ * 2.private: yalnızca ilgili sınıf erişebilir. iligli sınıftan türetilrn veya aynı paketler bulunan sınıflar erişemez
+ * 3. protected: ilgili sınıftan , ve o sınıftan türetilmiş sınıflardan ve ilgili sınıf ile aynı pakette bulunan sınıflar
+ * 4. default: herhangi ir erişim belirleyicisi yok ise default olarak kabul edilir defaults tanımlanmışsa o sınıftan ve aynı paketeki sınıftan erişilebilir 
+ */
+public static void main (String[] args) {
+
+
+Örnek:
+
+package javaders;
+
+public class ders {
+	
+private void secretMethod() {
+	System.out.println("gizli metod çalışıyor");
+}
+public static void main (String[] args) {	
+	ders calisma=new ders();
+	calisma.secretMethod();
+	
+	
+	
+	ÖRNEK:
+	
+	package javaders;
+	
+	public class ders {
+		
+	String name="quantum";
+	public void change(String name) {
+		this.name=name;
+	}
+	public static void main (String[] args) {	
+		ders t1=new ders();
+		t1.change("java dersi");
+		System.out.println(t1.name);
+
+	}	
+	}
+	
+	
+	
+	Örnek:
+	
+	package javaders;
+	
+	public class ders {
+		
+	String name="quantum";
+	public void change(String name1) {
+		name=name1;
+	}
+	public static void main (String[] args) {	
+		ders t1=new ders();
+		t1.change("java dersi");
+		System.out.println(t1.name);
+	
+	
+	}	
+	}
+	
+	
+	
+	Örnek:
+	
+	
+	
+	package javaders;
+	enum cars {
+		togg,mw,mercedes;
+	}
+	public class ders {
+		
+	public static void main (String[] args) {	
+		System.out.println(cars.togg);
+	System.out.println(cars.mercedes);
+	}	
+	}
+	
+	
+	Örnek:
+	
+	package javaders;
+	enum cars {
+		togg(250),bmw(230),mercedes(260);
+		public int volecity;
+		cars(int volecity){
+			this.volecity=volecity;
+		}
+	}
+	public class ders {
+		
+	public static void main (String[] args) {	
+		System.out.println(cars.togg.volecity);
+	System.out.println(cars.mercedes.volecity);
+	}	
+	}
+	
+	
+	Örnek:
+	
+	package javaders;
+	enum cars {
+		togg(250),bmw(230),mercedes(260);
+		public String color;
+		public int volecity;
+		cars(int volecity){
+			this.volecity=volecity;
+		}
+	}
+	public class ders {
+		
+	public static void main (String[] args) {	
+		cars.bmw.color="kırmızı";
+		cars.togg.color="kapadokya";
+		cars.mercedes.color="siyah";
+		System.out.println(cars.togg.volecity);
+	System.out.println(cars.mercedes.volecity);
+	System.out.println(cars.mercedes.color);
+	}	
+	}
+	

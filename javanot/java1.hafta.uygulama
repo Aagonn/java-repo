@@ -1,0 +1,32 @@
+	DEĞİŞKENLER
+    ÖRNEK 1:
+	
+	float x=45;
+		float y=83;
+		float z=y-x;
+		
+	System.out.println("x="+x+"  y="+y+" z="+z);
+		System.out.println(x<z);
+		
+		
+		String a = "merhaba\njava\ndersi ";
+		int b = 35;
+		String c= a+b;
+		System.out.println(a+b);
+		
+	}}
+		
+	ÖRNEK 2:
+	
+	int x=10;
+	int y=16;
+	if(x>y)
+	{
+		System.out.println("x y'den büyüktür");
+		
+	}
+	else if (x<y)
+	{
+		System.out.println("x y'den küçüktür");
+		
+	}

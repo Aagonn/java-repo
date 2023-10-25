@@ -1,0 +1,154 @@
+DİZİLER
+
+Dizi klasik tanımı ile bünyesinde aynı tip verilerin tutulduğu bir yapıdır diziler ile veriler daha kolay yönetilebilir ve gruplanan bu elemanlara erişim daha kolay olur java daki diziler diğer dillerden farklı olarak birer nesnedir bu özelliği ile yüksek performans ve güvenlik sağlar diziler sayesinde aynı tipde olan bu verilerin yönetilmesi kolaylaşır
+
+
+
+İnt [ ] dizi ;
+İnt dizi [ ] ;
+String dizi2 [ ];
+Long dizi3 [ ] ;
+Byte dizi4[ ] , dizi5[ ];
+
+  
+
+
+
+Yazım örnekleri
+
+İnt dizi [ ]= {5,7,3,6,7,8,9,10};
+
+int dizi;
+dizi=new int [ ] {5,6,7,8,9,1,-3,-6};
+
+İnt dizi [ ] = new int [ 7] ;
+Dizi =new int []{ 5,6,2,5,9,2,4};
+
+                                                              şeklinde gösterilir.
+
+
+Örnek:
+
+int[] dizi= new int [6];
+dizi= new int [] {6,98,65,3,1,22};
+
+for (int i=0; i<6; i++ );
+{
+System.out.println(dizi [i]);
+	}
+	}
+}
+ 
+For'un içine i<6 yerine i<dizi.lenght yazılırsa parantez içindeki sayıların hepsi küçüktür i gibi olur ve parantez içindeki sayıları tek tek saymamamız için kolaylık sağlar.
+
+
+Soru : 6 elemanlı dizinin elemanlarının küpleri ekrana yazdıran program.
+
+
+int dizi[]= new int [6];
+for (int i=0; i<dizi.length; i++ );
+{
+System.out.println(Math.pow(i, 3));
+	}
+
+
+
+DİZİLERİ KOPYALAMA
+
+ÖRNEK: 
+
+İnt array [ ]= new int[5];
+For (int i=0; i<array.lenght; i++)
+{
+   array[i]=i*i;
+}
+İnt [ ] array2=new int[array.lenght];
+For ( int i=0 ; i<array2.lenght; i+i)
+{
+array2[i]=array[i];
+System.out.println(array2[i]);
+}
+
+
+
+
+
+
+   System.ArrayCoppy metodu:
+
+System.arryCoppy(args,0,args,0,0);
+
+
+
+Args : kaynak dizi adı
+0: kaynak dizinin başlangıç indisi 
+Args: hedef diznin adı
+0: hedef dizi başlangıç indisi 
+0: kopyalanacak diznin eleman adedi
+
+ÖRNEK:
+
+int array1[]= {5,45,13,9,7,11,77};
+int array2[]= new int[6];
+System.arraycopy(array1,0,array2,0,6);
+for(int i=0; i<array2.lenght; i++)
+{
+	System.out.println(array2[i]);
+}
+
+
+
+DİZİLERDE SIRALAMA
+
+
+Arrays.short(sayi);
+Bu  kod sıralama işlemi yapıyor
+
+
+Soru: klavyeden okutulan 5 sayı değerini sıralı olarak yazan programı kodlayınız.
+
+8, -75, 460, 1, 49
+
+Scanner sc =new Scanner (System.in);
+int dizi[]=new int[5];
+
+for(int i=0 ; i< dizi.length; i++)
+{
+dizi[i]=sc.nextInt();
+}
+Arrays.sort(dizi);
+for(int i=0; i<dizi.length; i++)
+{
+System.out.println(dizi[i]);
+}
+
+
+DİZİLERDE ARAMA
+
+Array.binarySearch(sayi,3);
+Bu Kod arama işlemi yapar.
+
+
+Soru:
+
+Klavyeden okutulan 45, 3, 73, 9, 12 değerleri için sıralı şekilde 3. elemanı veren programı java da kodlayınız.
+
+
+Scanner sc =new Scanner (System.in);
+int dizi[]=new int[5];
+
+for(int i=0 ; i< dizi.length; i++)
+{
+dizi[i]=sc.nextInt();
+}
+Arrays.sort(dizi);
+int deger= Arrays.binarySearch(dizi, 3);
+{
+System.out.println(deger);
+}
+
+
+
+
+
+

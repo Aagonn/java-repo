@@ -1,0 +1,118 @@
+Nesneye yönelik programlama
+
+Nesneye yönelik proglama projelerdeki karışıklılığı ortadan kaldırmak için getirilmişit bu yazılımlardaki karışıklılığı gidermek için kullanılmakta olan 
+
+Encapsulation=kapsülleme
+Incheritence=kalıtım
+Abstraction=soyutlama
+Polymorphism=çok biçimlilik
+
+Nesneye yönelik programlamanın (oop) kullanmamızın sebebi programları dah küçük parçalara ayırarak oluşacak hataların giderilmesinde yazılımın geliştirici tarafına kolay anlaşılmasına olanak verir 
+Oop sayesinde daha gelişmiş ve daha karmaşık programların yazılabilmesini sağlar ve bunnlarda iyi bir performans sağlar 
+Oop nın temelinde sınıflar ve metodlar yatar kısacassı bir hiyerarşi yatar. 
+
+
+
+Sınıf ve nesne kavramları
+
+Sınıflar bilindiği üzere nesnelerden oluşur örnek vermek gerekirse bir araba sınıfı düşünelim bu arabaya ait hızı fiyatı rengi gibi özellikleri vardır bu özelliklere ilaveten hızlanması vites değişmesi yakıt yakması gibi davranış özellikleri vardır işte bu özellikleri içeren herşeye nesne diyebiliriz yaani bu araba sınıfından oluşturulacak örneklerlerin yazılımdaki karşılığı birer nesnedir 
+Kısacası sınıfların bir taslak nesnelerin ise bu taslaklara göre üretilen birer varlık olduğu düşünülebilir bu sınıf taslağına nesnelerin sahip olması gereken özellikler bulunur bu özelliklerin yazılımla hayata geçirmek istediğnizde bir örnek vererek oluştururuz  bu örnekler nesne olarak adlandırılabilir sınıflardan istediğimiz kadar nesne üretebiliriz aynı sınıftan türetilen nesnelerin tipide aynıdır.
+
+
+Public class Kisiler{
+// metodlar
+//özellikler
+//yapıcılar (construcarts)
+}
+
+Double kütlesi;
+String isim;
+İnt yas;
+
+Kişiler sınıfına ait özellikler.
+
+Public class kişiler {
+Double kütlesi;
+String ismi;
+İnt yas;
+İnt boy;
+Public static void main (String [] args)
+{
+Kişiler insan=new kişiler();
+İnsan. Yas=18;
+System.out.println (insan.yas);
+}
+}
+
+Örnek:
+
+
+public class arabalar {
+String marka, renk;
+int hız;
+void Hizlan()
+{
+	System.out.println("hızlanan araba");
+}
+void yavasla()
+{
+	System.out.println("yavaşlayan araba");	
+}
+
+	public static void main(String[] args) {
+		
+arabalar oto=new arabalar();
+oto.marka="togg";
+oto.renk="mavi";
+oto.hız= 250;
+oto.Hizlan();
+oto.yavasla();
+
+	}
+
+}
+
+Örnek:
+
+
+public class deneme {
+	int carpma (int sayi1,int sayi2)
+	{
+		return sayi1*sayi2;
+	}
+	int toplama(int sayi1,int sayi2) 
+	
+	{
+		return sayi1+sayi2;
+	}
+	public static void main (String [] args) {
+		
+		deneme islem1=new deneme();
+		deneme islem2=new deneme();
+int sonuc1=islem1.carpma(5,8);
+int sonuc2=islem2.toplama(5,8);
+System.out.println("çarpma sonucu : " + sonuc1);
+System.out.println ("toplama sonucu :" + sonuc2);
+	}
+}
+
+not: static anahtar kelimesi kısaca sınıftaki alanlar nesne oluşturmadan
+erişmşeyi sağlar . ststaic anahtar kelimesi eklenerek oluşturulanrak eklenen değişkenler sınıftan 
+bir nesne oluşturmadan doğrudan sınıf adı ile erişilebilir static olarak tanımlanmış değişkenler 
+(yani sınıf değişkenleri) o sınıftan oluşturulan her nesne içinayrı ayrı oluşturulmaz
+yani sınıf değişkenleri bellekte tek bir yerde tutulur ayrıca sınıf değişkenleri o sınıftan nesne oluşturulmasa bile  bellekte bunun için yer ayrılır.
+fakat nesne değişkenlerinde (int yas , string isim , double kilo) nesne oluşturulduğunda
+o değişken bellekte yer kaplamaya başlar
+
+
+Soru: 10 sayısının kübünü alan programı yazınız.
+
+import static java.lang.Math.*;
+public class deneme {
+	public static void main (String args[])
+	{
+		System.out.println(  pow(10,3));
+	}
+	}
+
+

@@ -1,0 +1,206 @@
+SOYUTLAMA(ABSTRACTİON)
+
+SOYUT SINIF(ABSTRACT CLASS):
+
+Soyut sınıflarda amacımız nesne türetilirken şablon oluşturmaktır. Soyut sınıflarda tanımlanan bu şablon bu sınıfı miras alan alt sınıflarda override edilerek yeniden tanımlanabilir. Bir örnek vermek istersek elimizde üç farklı şekil olsun bu geometrik şekillerin alan hesabı yapılmak istendiğinde her geometrik şekil için farklı bir alan hesabı bulunmaktadır.  Bu alanları hesaplayabilmek için kalıtım yerine soyut sınıf soyut metod tanımlayabiliriz. Alt sınıflarda soyut olarak tanımlanan metodları override ederek yeniden tanımlarız soyut sınıf tanımladığımızda içerisinde mutlaka bir soyut metod bulundurması gerekmektedir. Tersi durumu düşünürsek soyut bir metod bulunan bir sınıfın soyut metoda çevirmeliyiz bir sınıfı veya bir metodu soyut olarak tanımlamak istiyorsak erişim belirleyicisinden sonra abstract anahtar sözcüğü kullanılır sonrasında soyut metodda kendi başlarına bir anlam ifade etmezler soyut sınıftaki soyut metod alt sınıflarda override edilmez ise derleme anında hata ile karşılaşırız soyut sınıflar kalıtımla yakından ilişkili olur kalıtımda olduğu gibi soyut sınıflaardada bu sınıftan bir sınıf türetilmekte ve bazı gerekli metodlar override edilmektedir. Kalıtımla soyutlama arasında bir fark vardır soyut sınıflarda soyut olarak tanımladığımız metod alt sınıflarda mutlaka override edilmelidir. Kalıtımdaki gibi isteğe bağlı bir durum bulunmamaktadır soyut sınıfları kullanabilmemiz için  kalıtım yapacağımızdan kalıtım ile soyut sınıflar iç içedir soyut sınıflar ile ilgili örneğimize devam edersek geometrik şekil olarak elimize bir dikdörtgen bir üçgen ve birde daire  bulunsun bunların alan hesabını yapabilmek için soyutlamayı kuallanabiliriz 
+
+
+
+
+Üçgen sınıf.
+
+Public class ucgen extends geometriksekil{
+Privite double yuseklik;
+Privite double taban;
+Public void bilgi( double yukseklik, double taban)
+{
+This.yukseklik = yukseklik;
+This.taban = taban;
+}
+Public double  alan hesap(){
+Return (taban*yukseklik)/2;
+}}
+
+
+Dikdörtgen sınıf.
+
+Public calss dikdörtgen extends geometriksekil{
+Privite double uzunkenar;
+Privite double kısa kenar;
+Public void bilgi (double uzun kenar , double kısakenar){
+This.uzunkenar=uzunkenar;
+This.kısakenar=kısakenar;
+}
+Public double alanhesap(){
+Return uzunkenar*kisakenar;
+}}
+
+
+Daire sınıf.
+
+Public class daire extends geometriksekil{
+Privite double yarıcap;
+Privite double pi = Math.PI;
+Public void bilgi( double yaricap)
+{
+This.yaricap = yaricap;
+
+}
+Public double  alan hesap(){
+Return pi*yaricap*yaricap;
+}}
+
+
+
+Geometrik şekil sınıf.
+
+Public abstract class geometriksekil{
+Private string isim;
+Public abstract double alanhesap();
+}
+
+
+
+Ana sınıf.
+
+Public class  anasinif
+{
+Public static void main(String[] args)
+{
+Daire daire nesnesi=new daire();
+Dikdortgen dikdortegnnesnesi =new dikdortgen();
+Ucgen ucgennesnesi=new ucgennesnesi;
+Dairenesnesi.bilgi (5.0);
+Dikdortgennesnesi.bilgi(5.0,3.0);
+Ucgennesnesi.bilgi(40,30);
+System.out.println(dikdortgennesnesi.alanhesap());
+System.out.println(ucgennesnesi.alanhesap());
+System.out.println(dairenesnesi.alanhesap());
+
+
+ARAYÜZLER(İNTERFACES)
+
+Arayüzler soyut sınıflara benzesede birkaç yönüyle soyut sınıflardan ayrılır.soyut sınıflarda gövdesi soyut metodların diğer türden metodları tanımlarken  ara yüzlerde ise bütün metodlar gövdesiz olarak tanımlanırlar ara yüzler sınıfların bir işi nasıl yapacağa dağil işi yaparken hangi alanların veya ne yapması gerektiğini tanımlar arayüzler aslında çoklu kalıtım olayını basite indirgemek için oluşturmuştur 
+
+Erişim belirleyici class sınıfadı {
+
+}
+
+Erişim belirleyici interface arayüzadı{
+
+}
+
+Sınıfla kullanmak istediği arayüzün sınıf tanımından sonra imlements anahtar sözcüğü ile kedni bünyelerine dahil edebilirler ara yüzlerin yapı olarak soyut sınıflara benzediği söylenmiştir sınıflar sadece bir adet soyut sınıfı miras alarak kullanabilirken arayüzlerde ise bu durum farklıdır sınıflar birden fazla aryüzü bünyesine katabilirler buda çoklu kalıtımda işimizi kolaylaştırmaktadır 
+
+NOT : ara yüzler soyut sınıflarda olduğu gibi hem gövdenin hemde gözdesiz metodlara sahip değildir tamamen gövdesiz metodlar bulunur yani bu meetodlar başlı başına iş yapmazlar bu metodların imlement edile sınıflarda override edilmeleri gerekir  
+
+Çalışan arayüzümüz.
+
+Public interface calisan{
+Double oran =0.7;
+Double ucret();
+Void calisan bolumu();
+Void ucret belirle (double ucretsabiti);
+}
+
+
+İsci sınıf.
+
+Public class isci implements calisan{
+Double ucretsabiti ;
+Public double ucret(){
+Returnn ucretsabiti*oran;
+}
+Public void calismabolumu(){
+System.out.println("ucretli calısan ");
+}
+Public void ucretbelirleme(double ucretsabiti ){
+This.ucretsabiti=ucretsabiti;
+}}
+
+
+
+Müdür sınıf.
+
+Public class mudur implement calisan
+{
+Double ucretsabiti;
+Public double ucret()
+{
+Return ucretsabiti;
+}
+Public void calisanbolumu(){
+System.out.println("yonetici");
+}
+Public void ucretbelirle(double ucretsabiti)
+{
+This.ucretsabiti=ucretsabiti;
+}}
+
+
+
+
+Anasınıfımız.
+
+Public class Anasinifimiz{
+Public static voidmain (String [] args ){
+İsci ucretlicalisan=new isci ();
+Ucretlicalisan.bolumu();
+Ucretlicalisan.ucretbelirle(865.70);
+System.out.println("maaşı :" + ucretlicalisan.ucret());
+}
+
+
+Müdür .
+
+Public class Anasinifimiz{
+Public static voidmain (String [] args ){
+Mudur mudurmasi=new mudur();
+mudurması.bolumu();
+Ucretlicalisan.ucretbelirle(5000.0);
+System.out.println("maaşı :" + ucretlicalisan.ucret());
+}
+}
+
+İÇ İÇE ARAYÜZLER:
+
+İnterface Arayuz1
+{
+İnterface arayuz {
+Public void metod2();
+}
+Public metod1();
+}
+İnterface Arayüz
+{
+Public void metod3();
+}
+Class sinif1 implement Arayuz1
+{
+Publiv void metod ()
+{
+System.out.println("Arayuzdeki metod1 override edildi");
+}
+}
+
+Class sinif2 implement Arayuz1.arayuz2
+{
+Public void metod2()
+{
+System.out.println("arayuz2 deki metod 2 override edildi");
+}}
+Class sinif3 implement arayuz3
+{
+System.out.println("Arayuz 3 deki metod3 override edildi");
+}}
+Public class calistir
+{
+Public static void main (string[] args)
+{
+Sinif1 s1 =new sinif1();
+S1.metod1();
+Sinif2 s2= new sinif 2();
+S2.metod2();
+Sinif3 s3 =new sinif3();
+S3.metod3();
+}}

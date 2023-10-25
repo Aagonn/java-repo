@@ -1,0 +1,19 @@
+OBJECT SINIFINDAN DİZİ OLUŞTURMA
+
+Dizilerimizde arraylerde aynı tipten verilen verileri içerebiliriz yalnız bir istisna vardır javada her sınıf object sınıfından türetilfdiği için karşımıza bu istisna çıkmaktadır eğer dizimizi object sınıfından oluştururusak içerisine farklı tipte verileri ekleyebiliriz
+
+
+
+
+Object dizi[] = new Object [3];
+dizi [0]= "özgür";
+dizi[1]=2;
+dizi[2]=25.45;
+for (int i=0; i<3; i++)
+{
+System.out.println((i+1)+ ". eleman:" +dizi[i]);	
+
+}
+
+
+

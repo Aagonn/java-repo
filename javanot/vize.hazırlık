@@ -1,0 +1,179 @@
+// Scanner sınıfı dersi:
+//		
+		
+          //Scanner sc == new Scanner(System.in);
+         //System.out.println("lütfen yaşınızı giriniz:");
+        //int yas=sc.nextInt();
+       //System.out.println("yaşınız: " + yas);
+		
+//	int yas=sc.nexInt();------> eğer int yerine double almak istersek nextDouble
+//  kullanmamız gerekir oda şöyle görünür ----> double yas=sc.nextDouble();
+
+//  kullanıcıdan isim almak için ise ----> String isim = scanner.nextLine(); 
+//  yazılır.
+	
+            //Scanner sc = new Scanner(System.in);
+           //int yas = sc.nextInt();
+          //sc.nextLine();
+         //String isim = sc.nextLine();
+        //System.out.println("yaş: " + yas);
+       //System.out.println("isim: " + isim);
+	
+// proje 1 vücut kitle endeksi
+		
+              //Scanner cs = new Scanner(System.in); {
+             //System.out.print("lütfen kilonuzu giriniz: ");
+            //int kilo=cs.nextInt();
+           //System.out.print("lütfen boyunuzu giriniz: (örnek 1.74)");
+          //double boy = cs.nextDouble();
+         //double bki = kilo / (boy*boy);
+        //System.out.println("beden Kitle Endeksiniz: " + bki);
+       //}
+		
+	
+// proje 2 kilometreye göre toplam ödenecek tutar hesaplama	
+		
+            //Scanner sc = new Scanner(System.in);
+           //System.out.print("lütfen aracınızın kilometrede kaç kuruş yaktığımı giriniz: (örnek: 0,40):");
+          //double kurus = sc.nextDouble();
+         //System.out.print("aracınızla kaç km gittiğinizi yazınız:");
+        //int km = sc.nextInt();
+       //System.out.println("Toplam Yakıt Masrafınız " + (kurus*km)+" TL'dir...");
+	
+// proje 3 hipotenüs bulma
+	
+               //Scanner sc = new Scanner(System.in);
+              //int a;
+             //int b;
+            //System.out.println("birinci kenarı giriniz: ");
+           //a = sc.nextInt();
+          //System.out.println("ikinci kenarı giriniz: ");
+         //b = sc.nextInt();
+        //double h = Math.sqrt(a*a+b*b);
+       //System.out.println("hipotenüs: " + h );
+	
+// karşılaştırma operatörleri:
+		
+      // == ----> Eşit Mi?
+      // != ----> Eşit Değil Mi?
+      // > -----> büyük Mü?
+      // >= ----> Büyük EŞit Mİ?
+      // < -----> Küçük Mü?	
+	 // <= ----> Küçük Eşit Mi?
+		
+      // system.out.println(3==3);
+		
+// Mantıksal operatörler:
+		
+// && -----> and(ve) operatörü
+//Bütün sonuçlar kendi içinde true ise genel sonuç true, en az birisi bile false ise genel sonuç false olur.	
+
+		
+// ||-----> or (veya) operatörü	
+//sonuçlardan en az birisi bile true ise genel sonuç true, hepsi false ise genel sonuç false olur.
+		
+// ! not (değil) operatörü
+		
+      //System.out.println(3 != 3 || 2>3 || 3>4);
+		
+//İF VE ELSE BLOKLARI:
+		
+      /*if (koşul)	{
+	
+	      Koşul sağlanırsa (true) bu blok çalışır.
+	
+      }
+      else { 
+	      Bu koşul üstündeki herhangi bir koşul sağlanmadığında bu blok çalışır.
+	  
+	  
+      }
+      */
+		
+              //Scanner sc = new Scanner(System.in);
+             //System.out.println("lütfen yaşınıızı giriniz");
+            //int yas = sc.nextInt();
+           //if (yas < 18) {
+          //	System.out.println("reşit değilsiniz.");}
+         //else {
+        //		System.out.println("hoşgeldiniz.");
+	   //}
+	 
+//İF VE ELSE İF BLOKLARI:
+	
+      /*if (koşul) {
+		
+         }
+        else if (başka bir koşul) {
+		
+         }
+        else if (başka bir koşul) {
+		
+         }
+         else {
+         
+         }
+      */	
+	
+	
+                   //Scanner sc =new Scanner (System.in);
+                  //System.out.println("lütfen havanın derecesini giriniz.");
+                 //int hava = sc.nextInt();
+                //int a=10;
+               //if (hava<=a) {
+              //System.out.println("lütfen yanınıza mont alın.");
+             //}
+            //else if(hava> a && hava <=a*2 ) {
+           //System.out.println("lütfen yanınıza ceket alın.");
+          //}
+         //else if(hava>2*a&& hava<=a*3) {
+        //System.out.println("hava tişört ile gezilebilicek kadar güzel.");		
+       //}
+		
+// Switch Case yapıları:
+		
+                   //Scanner sc = new Scanner(System.in);
+                  //int islem = sc.nextInt();
+                 //switch(islem){
+                //case 1:
+               //System.out.println("1.işlem");
+              //case 2:
+             //System.out.println("2.işlem");
+            //case 3:
+           //System.out.println("3.işlem");
+          //default	:
+         //System.out.println("geçersiz işlem");	
+        //}
+
+                          //      Scanner scanner = new Scanner (System.in);
+                         //       int islem = scanner.nextInt();
+                        //   switch(islem) {
+                       //		case 1:
+                      //			System.out.println("1.işlem");
+                     //			break;
+                    //		case 2:
+                   //			System.out.println("2.işlem");
+                  //			break;
+                 //		case 3:
+                //			System.out.println("3.işlem");	
+               //			break;
+              //		case 4:
+             //			System.out.println("4.işlem");
+            //			break;
+           //		default:
+          //			System.out.println("geçersiz işlem");
+         //			break;
+		
+// döngü yapıları:
+		
+         // ****for föngüsü****	
+		
+    /*
+ 	   for	(başlatma ; koşul ; arttırma ve azaltma işlemi) {
+	   dööngü koşulumuz doğru olduğu sürece burası çalışacaktır.
+	
+	   }
+	*/
+
+	     //	for (int i = 2 ; i< 1000000000; i*=2) {
+		//System.out.println("i=" + i);
